@@ -4,12 +4,8 @@ import requests
 
 app = Flask(__name__)
 
-# তোমার জেমিনি এপিআই কি এখানে সুরক্ষিতভাবে জোড়া আছে
-k1 = "AQ.Ab8RN6JnrZf"
-k2 = "Ryk508V3_2cWg6"
-k3 = "A7Qk15fPk6pDNg1tnxgyWNKWg"
-API_KEY = k1 + k2 + k3
-
+# তোমার আসল জেমিনি এপিআই কি এখানে সরাসরি সেট করা আছে
+API_KEY = "AIzaSyDBfvwcPpaitEai2nqS7_6mJx5TBTujoBs"
 URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={API_KEY}"
 
 HTML_TEMPLATE = """
